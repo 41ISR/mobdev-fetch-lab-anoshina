@@ -23,7 +23,7 @@ function Header() {
           </NavLink>
    
           <NavLink
-              to="/"
+              to="/about"
               end
               className={({ isActive }) =>
                   isActive

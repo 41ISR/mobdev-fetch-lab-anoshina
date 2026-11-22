@@ -5,6 +5,7 @@ import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import Loader from '../../components/Loader/Loader';
 import './HomePage.css';
 
+const  API_KEY = import.meta.env.VITE_OMDB_API_KEY
 
 function HomePage() {
   const [query, setQuery] = useState('');
@@ -38,7 +39,7 @@ function HomePage() {
   return (
     <main className="home-page">
       <div className="container home-page__inner">
-        <SearchBar value={query} onChange={setQuery} />
+        <SearchBar value={query} onChange={setQuery}  onSubmit={handleSearch}  />
 
         <section className="home-page__section">
           <h2 className="home-page__section-title">Результат поиска</h2>

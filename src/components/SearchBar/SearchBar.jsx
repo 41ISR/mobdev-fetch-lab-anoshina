@@ -17,7 +17,7 @@ function SearchBar ({value, onChange, onSubmit}) {
           value={value}
           onChange={(event) => onChange(event.target.value)}
         />
-        <button type="button" className="search-bar__button">Искать</button>
+        <button type="submit" className="search-bar__button">Искать</button>
       </div>
     </form>
   );

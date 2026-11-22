@@ -23,7 +23,7 @@ function MovieCard({movie}) {
       </div>
 
       <div className="movie-card__info">
-        <h3 className="movie-card__title" title="Joker">{Title}</h3>
+        <h3 className="movie-card__title" title={Title}>{Title}</h3>
         <p className="movie-card__year">{Year}</p>
       </div>
     </article>
